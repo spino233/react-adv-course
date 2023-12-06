@@ -1,8 +1,10 @@
 import './App.css';
 import Root from './components/SwitchThemeExample';
 import ExampleToDo from './components/ToDo';
+import FetchData from './components/fetch-data-example/FetchData';
 import RegistrationForm from './components/forms/RegistrationForm';
 import GiftCard from './components/gift-card/GiftCard';
+import HookExampleComponent from './components/hooks/HookExampleComponent';
 import DessertList from'./components/list-components/DessertList'
 
 const desserts = [
@@ -55,7 +57,7 @@ function App() {
   ) */
 
   return (
-    <GiftCard/>
+    <HookExampleComponent/>
   )
 }
 
