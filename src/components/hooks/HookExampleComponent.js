@@ -3,7 +3,7 @@ import usePrevious from "./usePrevious";
 
 const HookExampleComponent = () => {
     const [day, setDay] = useState("Monday");
-    //const prevDay = usePrevious(day);
+    const prevDay = usePrevious(day);
     const getNextDay = () => {
         if (day === "Monday") {
         setDay("Tuesday")
@@ -17,7 +17,7 @@ const HookExampleComponent = () => {
         setDay("Monday")
         }
     }
-    const prevDay = usePrevious(day);
+    
     return (
         <div style={{padding: "40px"}}>
         <h1>
