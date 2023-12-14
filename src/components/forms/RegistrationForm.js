@@ -21,11 +21,11 @@ const RegistrationForm = () => {
   const [role, setRole] = useState("role");
 
   const getIsFormValid = () => {
-    if(firstName == "") return false;
+    if(firstName === "") return false;
     if(!validateEmail(email)) return false;
     if(password.value.length < 8) return false;
-    if(role != "individual" && role != "business") return false;
-    return true;
+    return !(role !== "individual" && role !== "business");
+
   };
 
   const clearForm = () => {

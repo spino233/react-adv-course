@@ -19,10 +19,7 @@ const FetchData = () => {
         <div style={{padding: "40px"}}>
             <h1>Customer Data</h1>
             <h2>{user.results[0].name.first}</h2>
-            <img 
-                src={user.results[0].picture.large} 
-                alt="Current customer picture"
-            />        
+            <img src={user.results[0].picture.large} alt=""/>
         </div>
     ) : (
         <h1>Data pending...</h1>
